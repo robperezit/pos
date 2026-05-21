@@ -3,11 +3,11 @@
  * License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl)
  */
 
-import { ConfirmationDialog } from "@web/core/confirmation_dialog/confirmation_dialog";
-import { Orderline } from "@point_of_sale/app/components/orderline/orderline";
-import { _t } from "@web/core/l10n/translation";
-import { patch } from "@web/core/utils/patch";
-import { useService } from "@web/core/utils/hooks";
+import {ConfirmationDialog} from "@web/core/confirmation_dialog/confirmation_dialog";
+import {Orderline} from "@point_of_sale/app/components/orderline/orderline";
+import {_t} from "@web/core/l10n/translation";
+import {patch} from "@web/core/utils/patch";
+import {useService} from "@web/core/utils/hooks";
 
 patch(Orderline.prototype, {
     setup() {
@@ -35,7 +35,6 @@ patch(Orderline.prototype, {
                 body: _t("Are you sure that you want to remove this item?"),
                 confirm: () => this._executeRemove(),
                 confirmLabel: _t("Remove"),
-                cancel: () => {},
             });
         } else {
             this._executeRemove();

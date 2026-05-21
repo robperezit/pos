@@ -91,6 +91,7 @@ Contributors
 - `Trobz <https://trobz.com>`__
 
   - Phan Hong Phuc <phucph@trobz.com>
+- Roberto Pérez Paredes <robperezdev7@gmail.com>
 
 Maintainers
 -----------
